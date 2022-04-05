@@ -6,7 +6,6 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.19"
@@ -49,12 +48,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/Fernando/OneDrive/Documentos/Lenguajes/PolePositionCR/Client/cmake-build-debug",
-		"source" : "C:/Users/Fernando/OneDrive/Documentos/Lenguajes/PolePositionCR/Client"
+		"build" : "D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug",
+		"source" : "D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 3
+		"minor" : 2
 	}
 }
