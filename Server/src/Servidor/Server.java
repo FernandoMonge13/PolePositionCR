@@ -7,7 +7,20 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class Server {
-    public static void main(String[] args) {
+
+    private String getString(DataInputStream inputStream) throws IOException {
+        char aux;
+        String inputString = "";
+        do{
+            aux = (char)inputStream.read();
+            inputString += aux;
+
+        }while(aux!=' ');
+
+        return inputString;
+    }
+
+    public  void Server() {
         try {
             ServerSocket serverSocket = new ServerSocket(5000);
             Socket socket;
@@ -18,15 +31,24 @@ public class Server {
                 socket = serverSocket.accept();
                 DataInputStream inputStream = new DataInputStream(socket.getInputStream());
                 DataOutputStream outputStream = new DataOutputStream(socket.getOutputStream());
-                outputStream.writeUTF("Indica tu nombre: ");
 
-                String nombreCliente = inputStream.readUTF();
 
-                outputStream.writeUTF("Hola cliente " + nombreCliente + "!\n");
-                ServerThread hilo = new ServerThread(inputStream, outputStream, nombreCliente);
-                hilo.start();
 
-                System.out.println("Cliente conectado: " + nombreCliente);
+//                char res;
+//                String finalString = "";
+//                do{
+//                    res = (char)inputStream.read();
+//                    finalString += res;
+//
+//                }while(res!='p');
+
+                System.out.println(this.getString(inputStream));
+
+//                outputStream.writeUTF("Hola cliente " + nombreCliente + "!\n");
+//                ServerThread hilo = new ServerThread(inputStream, outputStream, nombreCliente);
+//                hilo.start();
+//
+//                System.out.println("Cliente conectado: " + nombreCliente);
 
 
             }

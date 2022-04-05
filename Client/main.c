@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include "Client/Client.h"
 
 int main() {
-    printf("Hello, World!\n");
+    Connect();
     return 0;
 }

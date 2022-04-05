@@ -24,6 +24,7 @@ public class Client {
             System.out.println(mensagem);
 
             String name = scanner.next();
+            //char name_char = name.charAt(0);
             outputStream.writeUTF(name);
 
 
