@@ -1,3 +1,0 @@
-D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/cmake-build-debug/CMakeFiles/PolePositionCR.dir
-D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/cmake-build-debug/CMakeFiles/rebuild_cache.dir
