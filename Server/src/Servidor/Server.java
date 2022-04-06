@@ -3,13 +3,14 @@ package Servidor;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.io.PrintStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
 public class Server {
 
     private String getString(DataInputStream inputStream) throws IOException {
-        char aux;
+        Character aux;
         String inputString = "";
         do{
             aux = (char)inputStream.read();
@@ -30,7 +31,7 @@ public class Server {
             while (true) {
                 socket = serverSocket.accept();
                 DataInputStream inputStream = new DataInputStream(socket.getInputStream());
-                DataOutputStream outputStream = new DataOutputStream(socket.getOutputStream());
+                PrintStream outputStream = new PrintStream(socket.getOutputStream());
 
 
 
@@ -43,6 +44,8 @@ public class Server {
 //                }while(res!='p');
 
                 System.out.println(this.getString(inputStream));
+                outputStream.println("Holaj");
+                System.out.println("Paso");
 
 //                outputStream.writeUTF("Hola cliente " + nombreCliente + "!\n");
 //                ServerThread hilo = new ServerThread(inputStream, outputStream, nombreCliente);
