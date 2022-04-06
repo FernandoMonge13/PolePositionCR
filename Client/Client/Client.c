@@ -12,8 +12,8 @@ bool Connect(){
     client.sin_family = AF_INET;
     client.sin_addr.s_addr = inet_addr("127.0.0.1");
     client.sin_port = htons(5000);
-    char buffer[1024];
-    char abc [100] = "testp ";
+    char buffer[6000];
+    char abc [100] = "holadesdec ";
 
     if (WSAStartup(MAKEWORD(2,2),&wsa) != 0){
         printf("Failed. Error Code : %d",WSAGetLastError());
@@ -34,6 +34,11 @@ bool Connect(){
 
 
     send(sSocket, abc, sizeof(abc),0);
+
+    recv(sSocket, buffer, sizeof(buffer), 0);
+    printf("Recibio: %s", buffer);
+
+
 
 
 }
