@@ -1,12 +1,13 @@
-package Data.Objects;
+package Data.Balas;
 
-public class Objects {
-
+public class Balas {
     private Integer posX, posY;
+    private Integer velocidad;
 
-    public Objects(Integer posX, Integer posY){
+    public Balas(Integer posX, Integer posY, Integer velocidad) {
         this.posX = posX;
         this.posY = posY;
+        this.velocidad = velocidad;
     }
 
     public Integer getPosX() {
@@ -23,5 +24,13 @@ public class Objects {
 
     public void setPosY(Integer posY) {
         this.posY = posY;
+    }
+
+    public Integer getVelocidad() {
+        return velocidad;
+    }
+
+    public void setVelocidad(Integer velocidad) {
+        this.velocidad = velocidad;
     }
 }

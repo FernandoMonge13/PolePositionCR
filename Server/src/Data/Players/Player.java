@@ -1,17 +1,17 @@
 package Data.Players;
 
 public class Player {
-    private int puntos;
-    private int vidas;
-    private int posX, posY;
-
+    private Integer puntos;
+    private Integer vidas;
+    private Integer posX, posY;
+    private Integer velocidad;
 
     public Player() {
         this.vidas = 3;
         this.puntos = 0;
     }
 
-    public int getPuntos() {
+    public Integer getPuntos() {
         return puntos;
     }
 
@@ -19,7 +19,7 @@ public class Player {
         this.puntos = puntos;
     }
 
-    public int getVidas() {
+    public Integer getVidas() {
         return vidas;
     }
 
@@ -27,7 +27,7 @@ public class Player {
         this.vidas = vidas;
     }
 
-    public int getPosX() {
+    public Integer getPosX() {
         return posX;
     }
 
@@ -35,7 +35,7 @@ public class Player {
         this.posX = posX;
     }
 
-    public int getPosY() {
+    public Integer getPosY() {
         return posY;
     }
 

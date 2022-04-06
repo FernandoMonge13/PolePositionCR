@@ -1,7 +1,6 @@
 package Servidor;
 
 import java.io.DataInputStream;
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.net.ServerSocket;
@@ -33,32 +32,13 @@ public class Server {
                 DataInputStream inputStream = new DataInputStream(socket.getInputStream());
                 PrintStream outputStream = new PrintStream(socket.getOutputStream());
 
-
-
-//                char res;
-//                String finalString = "";
-//                do{
-//                    res = (char)inputStream.read();
-//                    finalString += res;
-//
-//                }while(res!='p');
-
                 System.out.println(this.getString(inputStream));
                 outputStream.println("Holaj");
                 System.out.println("Paso");
-
-//                outputStream.writeUTF("Hola cliente " + nombreCliente + "!\n");
-//                ServerThread hilo = new ServerThread(inputStream, outputStream, nombreCliente);
-//                hilo.start();
-//
-//                System.out.println("Cliente conectado: " + nombreCliente);
-
-
             }
 
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
 }
