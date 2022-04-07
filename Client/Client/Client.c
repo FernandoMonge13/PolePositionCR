@@ -13,7 +13,7 @@ bool Connect(){
     client.sin_addr.s_addr = inet_addr("127.0.0.1");
     client.sin_port = htons(5000);
     char buffer[6000];
-    char abc [100] = "holadesdec ";
+    char abc [100] = "buenosdias}";
 
     if (WSAStartup(MAKEWORD(2,2),&wsa) != 0){
         printf("Failed. Error Code : %d",WSAGetLastError());
@@ -26,10 +26,8 @@ bool Connect(){
         printf("!!: Could not create the socket  : %d", WSAGetLastError());
         return false;}
 
-    for (int (i) = 0; (i) < 4; ++(i)) {
-        if(connect(sSocket, (struct sockaddr*) &client, sizeof(client))) {
-            printf("Connected \n");
-        }
+    for (int (i) = 0; i < 4; ++(i)) {
+        connect(sSocket, (struct sockaddr*) &client, sizeof(client));
     }
 
 

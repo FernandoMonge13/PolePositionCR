@@ -16,7 +16,7 @@ public class Server {
             aux = (char)inputStream.read();
             inputString += aux;
 
-        }while(aux!=' ');
+        }while(aux!='}');
 
         return inputString;
     }
@@ -34,8 +34,7 @@ public class Server {
                 PrintStream outputStream = new PrintStream(socket.getOutputStream());
 
                 System.out.println(this.getString(inputStream));
-                outputStream.println("Holaj");
-                System.out.println("Paso");
+                outputStream.println("Hola desde el Servidor");
 
 //                outputStream.writeUTF("Hola cliente " + nombreCliente + "!\n");
 //                ServerThread hilo = new ServerThread(inputStream, outputStream, nombreCliente);
