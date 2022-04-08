@@ -2,6 +2,7 @@ package Json;
 
 
 import Data.Data;
+import Data.Players.Player;
 import com.google.gson.Gson;
 
 import java.text.ParseException;
@@ -11,11 +12,10 @@ public class JsonAnalizador {
 
     }
 
-    public String JsonReading(String json) {
-
-
-
-        return json;
+    public Player JsonReading(String json) {
+        Gson gson = new Gson();
+        Player player = gson.fromJson(json, Player.class);
+        return player;
     }
 
 
