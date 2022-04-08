@@ -36,7 +36,38 @@ bool Connect(){
     recv(sSocket, buffer, sizeof(buffer), 0);
     printf("Recibio: %s", buffer);
 
+}
 
+void createJson(){
+    cJSON* taste = NULL;
+
+    char *send = NULL;
+
+    cJSON *information = cJSON_CreateObject();
+
+    cJSON_AddStringToObject(information,"name","Fernando");
+    cJSON_AddNumberToObject(information, "Age",20);
+
+    //taste = cJSON_GetObjectItem(information, "name =")
+
+    send = cJSON_Print(information);
+
+    printf("%s", send);
+
+}
+
+void readJson(char *info){
+
+    cJSON* taste;
+    char name;
+
+//    Todo_lo que tenga info adentro
+    taste = cJSON_Parse(info);
+
+//    Jala un unico elemento del json y en este caso
+//    se lo mete a un string pero puede se a uno tipo cJSON
+
+    name = cJSON_GetObjectItem(taste, "name");
 
 
 }

@@ -82,6 +82,12 @@
 		<Unit filename="C:/Users/Fernando/OneDrive/Documentos/Lenguajes/PolePositionCR/Client/Client/Client.h">
 			<Option target="Client"/>
 		</Unit>
+		<Unit filename="C:/Users/Fernando/OneDrive/Documentos/Lenguajes/PolePositionCR/Client/Json/cJSON.c">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="C:/Users/Fernando/OneDrive/Documentos/Lenguajes/PolePositionCR/Client/Json/cJSON.h">
+			<Option target="Client"/>
+		</Unit>
 		<Unit filename="C:/Users/Fernando/OneDrive/Documentos/Lenguajes/PolePositionCR/Client/main.c">
 			<Option target="Client"/>
 		</Unit>

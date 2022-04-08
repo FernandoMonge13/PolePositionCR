@@ -2,6 +2,7 @@
 #include "Client/Client.h"
 
 int main() {
-    Connect();
+    createJson();
+    //Connect();
     return 0;
 }

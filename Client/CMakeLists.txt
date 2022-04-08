@@ -4,4 +4,4 @@ project(Client C)
 set(CMAKE_C_STANDARD 99)
 link_libraries(ws2_32 wsock32)
 
-add_executable(Client main.c Client/Client.c Client/Client.h)
+add_executable(Client main.c Client/Client.c Client/Client.h Json/cJSON.c Json/cJSON.h)
