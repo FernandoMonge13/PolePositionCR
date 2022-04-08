@@ -1,9 +1,15 @@
+import Data.Data;
+import Data.Players.Player;
+import Json.JsonAnalizador;
 import Servidor.Server;
-public class main {
-    public static void main(String[] args) {
+import org.json.simple.parser.ParseException;
 
-       Server myserver = new Server();
-       myserver.Server();
+public class main {
+    public static void main(String[] args) throws ParseException, java.text.ParseException {
+
+//       Server myserver = new Server();
+//       myserver.Server();
+
 
 
     }

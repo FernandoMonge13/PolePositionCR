@@ -1,10 +1,11 @@
 package Data.Objects;
 
-public class Objects {
+public class Objetos {
 
     private Integer posX, posY;
 
-    public Objects(Integer posX, Integer posY){
+
+    public Objetos(Integer posX, Integer posY){
         this.posX = posX;
         this.posY = posY;
     }
@@ -24,4 +25,14 @@ public class Objects {
     public void setPosY(Integer posY) {
         this.posY = posY;
     }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    private Integer id;
 }

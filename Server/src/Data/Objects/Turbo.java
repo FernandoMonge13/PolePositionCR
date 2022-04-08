@@ -1,6 +1,6 @@
 package Data.Objects;
 
-public class Turbo extends Objects {
+public class Turbo extends Objetos {
     private Integer speed;
 
     public Turbo(Integer posX, Integer posY, Integer speed) {

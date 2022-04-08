@@ -5,10 +5,33 @@ public class Player {
     private Integer vidas;
     private Integer posX, posY;
     private Integer velocidad;
+    private Integer id;
 
     public Player() {
         this.vidas = 3;
         this.puntos = 0;
+    }
+
+    public Player(Integer id) {
+        this.id = id;
+        this.vidas = 3;
+        this.puntos = 0;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getVelocidad() {
+        return velocidad;
+    }
+
+    public void setVelocidad(Integer velocidad) {
+        this.velocidad = velocidad;
     }
 
     public Integer getPuntos() {

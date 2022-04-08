@@ -1,6 +1,7 @@
 package Data;
 
 import Data.Balas.Balas;
+import Data.Objects.Objetos;
 import Data.Players.Player;
 import java.util.LinkedList;
 import java.util.Objects;
@@ -8,7 +9,7 @@ import java.util.Objects;
 public class Data {
 
     LinkedList<Player> players;
-    LinkedList<Objects> objects;
+    LinkedList<Objetos> objects;
     LinkedList<Balas> balas;
 
     public Data() {
@@ -21,7 +22,7 @@ public class Data {
         this.players = players;
     }
 
-    public void setObjects(LinkedList<Objects> objects) {
+    public void setObjects(LinkedList<Objetos> objects) {
         this.objects = objects;
     }
 
@@ -33,7 +34,7 @@ public class Data {
         return players;
     }
 
-    public LinkedList<Objects> getObjects() {
+    public LinkedList<Objetos> getObjects() {
         return objects;
     }
 
@@ -45,11 +46,11 @@ public class Data {
         players.add(player);
     }
 
-    public void addObject(Objects object) {
+    public void addObject(Objetos object) {
         objects.add(object);
     }
 
-    public void addMessage(Balas bala) {
+    public void addBalas(Balas bala) {
         balas.add(bala);
     }
 
@@ -82,4 +83,47 @@ public class Data {
         clearObjects();
         clearBalas();
     }
+
+    public void updatePlayers(Player playerListReceived[]){
+        for (int i = 0; i < playerListReceived.length; i++) {
+            if (playerListReceived[i].getId().equals(players.get(i).getId())) {
+
+                players.get(i).setPosX(playerListReceived[i].getPosX());
+                players.get(i).setPosY(playerListReceived[i].getPosY());
+                players.get(i).setVelocidad(playerListReceived[i].getVelocidad());
+                players.get(i).setVidas(playerListReceived[i].getVidas());
+                players.get(i).setPuntos(playerListReceived[i].getPuntos());
+                break;
+            }
+        }
+    }
+
+    public void updateObjects(Objetos objectListReceived[]){
+        for (int i = 0; i < objectListReceived.length; i++) {
+            if (objectListReceived[i].getId().equals(objects.get(i).getId())) {
+                objects.get(i).setPosX(objectListReceived[i].getPosX());
+                objects.get(i).setPosY(objectListReceived[i].getPosY());
+                break;
+            }
+        }
+    }
+
+    public void updateBalas(Balas balaListReceived[]){
+        for (int i = 0; i < balaListReceived.length; i++) {
+            if (balaListReceived[i].getId().equals(balas.get(i).getId())) {
+                balas.get(i).setPosX(balaListReceived[i].getPosX());
+                balas.get(i).setPosY(balaListReceived[i].getPosY());
+                balas.get(i).setVelocidad(balaListReceived[i].getVelocidad());
+
+                break;
+            }
+        }
+    }
+
+    public void update(Player playerListReceived[], Objetos objectListReceived[], Balas balaListReceived[]){
+        updatePlayers(playerListReceived);
+        updateObjects(objectListReceived);
+        updateBalas(balaListReceived);
+    }
 }
+
