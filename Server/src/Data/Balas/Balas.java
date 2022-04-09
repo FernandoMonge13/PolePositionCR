@@ -2,7 +2,6 @@ package Data.Balas;
 
 public class Balas {
     private Integer posX, posY;
-    private Integer velocidad;
 
 
 
@@ -11,7 +10,6 @@ public class Balas {
     public Balas(Integer posX, Integer posY, Integer velocidad) {
         this.posX = posX;
         this.posY = posY;
-        this.velocidad = velocidad;
     }
 
     public Integer getPosX() {
@@ -28,14 +26,6 @@ public class Balas {
 
     public void setPosY(Integer posY) {
         this.posY = posY;
-    }
-
-    public Integer getVelocidad() {
-        return velocidad;
-    }
-
-    public void setVelocidad(Integer velocidad) {
-        this.velocidad = velocidad;
     }
 
     public Integer getId() {

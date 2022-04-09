@@ -7,7 +7,6 @@ public class Player {
     private Integer puntos;
     private Integer vidas;
     private Integer posX, posY;
-    private Integer velocidad;
 
     private Balas balas;
 
@@ -28,14 +27,6 @@ public class Player {
 
     public void setId(Integer id) {
         this.id = id;
-    }
-
-    public Integer getVelocidad() {
-        return velocidad;
-    }
-
-    public void setVelocidad(Integer velocidad) {
-        this.velocidad = velocidad;
     }
 
     public Integer getPuntos() {
