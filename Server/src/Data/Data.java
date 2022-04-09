@@ -67,7 +67,6 @@ public class Data {
 
                 players.get(i).setPosX(playerListReceived[i].getPosX());
                 players.get(i).setPosY(playerListReceived[i].getPosY());
-                players.get(i).setVelocidad(playerListReceived[i].getVelocidad());
                 players.get(i).setVidas(playerListReceived[i].getVidas());
                 players.get(i).setPuntos(playerListReceived[i].getPuntos());
                 break;
