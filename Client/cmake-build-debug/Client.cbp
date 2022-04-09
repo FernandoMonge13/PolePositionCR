@@ -80,6 +80,12 @@
 		<Unit filename="D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/Client/Client.h">
 			<Option target="Client"/>
 		</Unit>
+		<Unit filename="D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/Json/cJSON.c">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/Json/cJSON.h">
+			<Option target="Client"/>
+		</Unit>
 		<Unit filename="D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/main.c">
 			<Option target="Client"/>
 		</Unit>

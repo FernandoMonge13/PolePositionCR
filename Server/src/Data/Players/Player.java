@@ -1,11 +1,15 @@
 package Data.Players;
 
+import Data.Balas.Balas;
+
 public class Player {
+    private Integer id = 0;
     private Integer puntos;
     private Integer vidas;
     private Integer posX, posY;
     private Integer velocidad;
-    private Integer id;
+
+    private Balas balas;
 
     public Player() {
         this.vidas = 3;
@@ -64,6 +68,14 @@ public class Player {
 
     public void setPosY(int posY) {
         this.posY = posY;
+    }
+
+    public Balas getBalas() {
+        return balas;
+    }
+
+    public void setBalas(Balas balas) {
+        this.balas = balas;
     }
 }
 

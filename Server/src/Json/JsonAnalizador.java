@@ -20,7 +20,6 @@ public class JsonAnalizador {
 
 
     public String JsonWritting (Object object) throws ParseException {
-
         Gson gson = new Gson();
         String json = gson.toJson(object);
         return json;

@@ -1,6 +1,10 @@
 package Servidor;
 
+import Data.Balas.Balas;
 import Data.Data;
+import Data.Objects.Hueco;
+import Data.Objects.Turbo;
+import Data.Objects.Vida;
 import Data.Players.Player;
 import Json.JsonAnalizador;
 
@@ -42,9 +46,25 @@ public class Server {
                 PrintStream outputStream = new PrintStream(socket.getOutputStream());
 
                 System.out.println(this.getString(inputStream));
-                outputStream.println("Hola desde el Servidor");
 
+                Player player = new Player();
+                player.setPosX(1);
+                player.setPosY(2);
+                player.setBalas(new Balas(1,1,3));
 
+                Player player2 = new Player();
+                player2.setPosX(3);
+                player2.setPosY(4);
+                player2.setBalas(new Balas(2,2,6));
+
+                data.addPlayer(player);
+                data.addPlayer(player2);
+
+                data.addObject(new Hueco(1,1));
+                data.addObject(new Turbo(2,2));
+                data.addObject(new Vida(3,3));
+
+                System.out.println(json.JsonWritting(data));
 
 //                Player player = new Player();
 //                player.setPosX(1);
@@ -60,6 +80,7 @@ public class Server {
 //
 //                System.out.println("Cliente conectado: " + nombreCliente);
 
+                outputStream.println(json.JsonWritting(data));
 
             }
 

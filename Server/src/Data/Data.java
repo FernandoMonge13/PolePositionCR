@@ -10,12 +10,10 @@ public class Data {
 
     LinkedList<Player> players;
     LinkedList<Objetos> objects;
-    LinkedList<Balas> balas;
 
     public Data() {
         players = new LinkedList<>();
         objects = new LinkedList<>();
-        balas = new LinkedList<>();
     }
 
     public void setPlayers(LinkedList<Player> players) {
@@ -26,20 +24,12 @@ public class Data {
         this.objects = objects;
     }
 
-    public void setBalas(LinkedList<Balas> balas) {
-        this.balas = balas;
-    }
-
     public LinkedList<Player> getPlayers() {
         return players;
     }
 
     public LinkedList<Objetos> getObjects() {
         return objects;
-    }
-
-    public LinkedList<Balas> getBalas() {
-        return balas;
     }
 
     public void addPlayer(Player player) {
@@ -50,20 +40,12 @@ public class Data {
         objects.add(object);
     }
 
-    public void addBalas(Balas bala) {
-        balas.add(bala);
-    }
-
     public void removePlayer(Player player) {
         players.remove(player);
     }
 
     public void removeObject(Objects object) {
         objects.remove(object);
-    }
-
-    public void removeMessage(Balas bala) {
-        balas.remove(bala);
     }
 
     public void clearPlayers() {
@@ -74,14 +56,9 @@ public class Data {
         objects.clear();
     }
 
-    public void clearBalas() {
-        balas.clear();
-    }
-
     public void clear() {
         clearPlayers();
         clearObjects();
-        clearBalas();
     }
 
     public void updatePlayers(Player playerListReceived[]){
@@ -108,22 +85,9 @@ public class Data {
         }
     }
 
-    public void updateBalas(Balas balaListReceived[]){
-        for (int i = 0; i < balaListReceived.length; i++) {
-            if (balaListReceived[i].getId().equals(balas.get(i).getId())) {
-                balas.get(i).setPosX(balaListReceived[i].getPosX());
-                balas.get(i).setPosY(balaListReceived[i].getPosY());
-                balas.get(i).setVelocidad(balaListReceived[i].getVelocidad());
-
-                break;
-            }
-        }
-    }
-
     public void update(Player playerListReceived[], Objetos objectListReceived[], Balas balaListReceived[]){
         updatePlayers(playerListReceived);
         updateObjects(objectListReceived);
-        updateBalas(balaListReceived);
     }
 }
 
