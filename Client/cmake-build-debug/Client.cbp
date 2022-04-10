@@ -8,94 +8,90 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug"/>
+				<Option working_dir="D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Client">
-				<Option output="C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug/Client.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug"/>
+				<Option output="D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug/Client.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/caman/Documents/PolePositionCR/Client/SDL2-2.0.20/include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-					<Add directory="/mingw/include"/>
+					<Add directory="D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/SDL2-2.0.20/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 Client"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 Client"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Client/fast">
-				<Option output="C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug/Client.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug"/>
+				<Option output="D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug/Client.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Users/caman/Documents/PolePositionCR/Client/SDL2-2.0.20/include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2021.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
-					<Add directory="/mingw/include"/>
+					<Add directory="D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/SDL2-2.0.20/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 Client/fast"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 Client/fast"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug"/>
+				<Option working_dir="D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug"/>
+				<Option working_dir="D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/caman/Documents/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/caman/Documents/PolePositionCR/Client/Client/Client.c">
+		<Unit filename="D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/Client/Client.c">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="C:/Users/caman/Documents/PolePositionCR/Client/Client/Client.h">
+		<Unit filename="D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/Client/Client.h">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="C:/Users/caman/Documents/PolePositionCR/Client/Json/cJSON.c">
+		<Unit filename="D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/Json/cJSON.c">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="C:/Users/caman/Documents/PolePositionCR/Client/Json/cJSON.h">
+		<Unit filename="D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/Json/cJSON.h">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="C:/Users/caman/Documents/PolePositionCR/Client/main.c">
+		<Unit filename="D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/main.c">
 			<Option target="Client"/>
 		</Unit>
-		<Unit filename="C:/Users/caman/Documents/PolePositionCR/Client/CMakeLists.txt">
+		<Unit filename="D:/Joel/Estudio/Tec/Progra/Lenguajes/C_Java/PolePositionCR/Client/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

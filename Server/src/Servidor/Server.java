@@ -46,6 +46,19 @@ public class Server {
                 PrintStream outputStream = new PrintStream(socket.getOutputStream());
 
                 System.out.println(this.getString(inputStream));
+                String inputString = this.getString(inputStream);
+
+
+                if(inputString.equals("{nuevoJugador}")){
+                    data.addPlayer(new Player());
+                    outputStream.println(data.getPlayers().getLast().getId());
+
+                } else {
+
+                    Player playerReceived = json.JsonReading(inputString);
+                    data.updatePlayers(playerReceived);
+                    outputStream.println(json.JsonWritting(data));
+                }
 
                 Player player = new Player();
                 player.setPosX(1);
@@ -64,7 +77,7 @@ public class Server {
                 data.addObject(new Turbo(2,2));
                 data.addObject(new Vida(3,3));
 
-                System.out.println(json.JsonWritting(data));
+                System.out.println("Información enviada:\n" + json.JsonWritting(data));
 
 //                Player player = new Player();
 //                player.setPosX(1);
@@ -72,7 +85,7 @@ public class Server {
 //                data.addPlayer(player);
 //                json.JsonWritting(data);
 
-                System.out.println(json.JsonWritting(data));
+//                System.out.println(json.JsonWritting(data));
 
 //                outputStream.writeUTF("Hola cliente " + nombreCliente + "!\n");
 //                ServerThread hilo = new ServerThread(inputStream, outputStream, nombreCliente);
@@ -80,7 +93,6 @@ public class Server {
 //
 //                System.out.println("Cliente conectado: " + nombreCliente);
 
-                outputStream.println(json.JsonWritting(data));
 
             }
 

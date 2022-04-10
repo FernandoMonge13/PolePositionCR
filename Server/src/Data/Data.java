@@ -33,7 +33,13 @@ public class Data {
     }
 
     public void addPlayer(Player player) {
+
         players.add(player);
+        for (int i = 0; i < players.size(); i++) {
+            players.get(i).setId(i+1);
+        }
+
+
     }
 
     public void addObject(Objetos object) {
@@ -61,14 +67,14 @@ public class Data {
         clearObjects();
     }
 
-    public void updatePlayers(Player playerListReceived[]){
-        for (int i = 0; i < playerListReceived.length; i++) {
-            if (playerListReceived[i].getId().equals(players.get(i).getId())) {
+    public void updatePlayers(Player playerReceived){
+        for (int i = 0; i < players.size(); i++) {
+            if (playerReceived.getId().equals(players.get(i).getId())) {
 
-                players.get(i).setPosX(playerListReceived[i].getPosX());
-                players.get(i).setPosY(playerListReceived[i].getPosY());
-                players.get(i).setVidas(playerListReceived[i].getVidas());
-                players.get(i).setPuntos(playerListReceived[i].getPuntos());
+                players.get(i).setPosX(playerReceived.getPosX());
+                players.get(i).setPosY(playerReceived.getPosY());
+                players.get(i).setVidas(playerReceived.getVidas());
+                players.get(i).setPuntos(playerReceived.getPuntos());
                 break;
             }
         }
@@ -84,8 +90,8 @@ public class Data {
         }
     }
 
-    public void update(Player playerListReceived[], Objetos objectListReceived[], Balas balaListReceived[]){
-        updatePlayers(playerListReceived);
+    public void update(Player playerReceived, Objetos objectListReceived[], Balas balaListReceived[]){
+        updatePlayers(playerReceived);
         updateObjects(objectListReceived);
     }
 }
