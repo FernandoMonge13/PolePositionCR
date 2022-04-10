@@ -2,8 +2,8 @@
 // Created by Fernando on 04/04/22.
 //
 
-
 #include "Client.h"
+#include "../Json/cJSON.c";
 
 bool Connect(){
     WSADATA wsa;
