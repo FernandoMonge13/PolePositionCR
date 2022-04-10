@@ -13,14 +13,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a8ee8593-f660-4f68-b478-f386c1f1c6fe" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PepsiTankIns.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ROAD.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RecopeTruckIns.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/chuzoCE.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/road.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/roads2W.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/Client.c" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Client.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/Client.h" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Client.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/libClient.dll.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libClient.dll.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/Servidor/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/out/production/Server/Servidor/Server.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +54,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -76,6 +76,7 @@
       <workItem from="1649572714446" duration="13673000" />
       <workItem from="1649588082222" duration="10211000" />
       <workItem from="1649608630580" duration="54000" />
+      <workItem from="1649608737288" duration="726000" />
     </task>
     <servers />
   </component>

@@ -8,7 +8,17 @@
 #include <stdio.h>
 #include "../Json/cJSON.h";
 
-bool Connect();
+struct Player{
+    int id;
+    int puntos;
+    int vidas;
+    int posX, posY;
+    int posBalaX, posBalaY;
+    int carro;
+    bool running;
+};
+
+struct Player Connect();
 void createJson();
 void readJson();
 

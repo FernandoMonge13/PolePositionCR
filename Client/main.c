@@ -3,6 +3,7 @@
 
 int main() {
 //    createJson();
-    Connect();
+    struct Player *player;
+    Connect(player);
     return 0;
 }

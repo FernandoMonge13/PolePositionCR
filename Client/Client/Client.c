@@ -18,22 +18,12 @@ struct Data{
 
 };
 
-struct Player{
-    int id;
-    int puntos;
-    int vidas;
-    int posX, posY;
-    int posBalaX, posBalaY;
-    int carro;
-    bool running;
 
 
-};
 
+struct Player Connect(struct Player* player){
 
-bool Connect(){
-
-    struct Player* player = (struct Player*) malloc(sizeof(struct Player));
+//    struct Player* player = (struct Player*) malloc(sizeof(struct Player));
     player->id = 1;
     player->puntos = 0;
     player->vidas = 3;
@@ -57,13 +47,15 @@ bool Connect(){
     if (WSAStartup(MAKEWORD(2,2),&wsa) != 0){
         printf("Failed. Error Code : %d",WSAGetLastError());
 
-        return false; }
+//        return false;
+    }
 
     printf("Client connected \n");
 
     if((sSocket = socket(AF_INET , SOCK_STREAM , 0 )) == INVALID_SOCKET) {
         printf("!!: Could not create the socket  : %d", WSAGetLastError());
-        return false;}
+//        return false;
+    }
 
     for (int (i) = 0; i < 4; ++(i)) {
         connect(sSocket, (struct sockaddr*) &client, sizeof(client));
@@ -134,7 +126,7 @@ bool Connect(){
 
 //    readJson(buffer);
     //printf("Recibio: %s", buffer);
-
+    return *player;
 }
 
 void createJson(){
