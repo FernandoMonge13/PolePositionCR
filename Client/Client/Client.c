@@ -5,9 +5,9 @@
 
 #include "Client.h"
 
-bool conected = true;
-bool running = false;
-bool carSelect = false;
+//bool conected = true;
+//bool running = false;
+//bool carSelect = false;
 char newPlayer[100] = "{nuevo Jugador}";
 char start[100] = "{Iniciar}";
 char newString[100];
@@ -24,15 +24,15 @@ struct Data{
 struct Player Connect(struct Player* player){
 
 //    struct Player* player = (struct Player*) malloc(sizeof(struct Player));
-    player->id = 1;
-    player->puntos = 0;
-    player->vidas = 3;
-    player->posX = 0;
-    player->posY = 0;
-    player->posBalaX = 0;
-    player->posBalaY = 0;
-    player->carro = 2;
-    player->running = false;
+//    player->id = 1;
+//    player->puntos = 0;
+//    player->vidas = 3;
+//    player->posX = 0;
+//    player->posY = 0;
+//    player->posBalaX = 0;
+//    player->posBalaY = 0;
+//    player->carro = 2;
+//    player->running = false;
 
 
     WSADATA wsa;
@@ -61,7 +61,7 @@ struct Player Connect(struct Player* player){
         connect(sSocket, (struct sockaddr*) &client, sizeof(client));
     }
 
-    if (!conected && !running && !carSelect) {
+    if (!player->conected && !player->running && !player->carSelect) {
         char datos[100] = "{nuevo Jugador}";
         datos[15] = player->id;
         datos[16] = '\0';
@@ -69,15 +69,23 @@ struct Player Connect(struct Player* player){
         send(sSocket, datos, sizeof(datos),0);
         recv(sSocket, buffer, sizeof(buffer), 0);
 
+        player->id=buffer[0];
+
         // Aqui se le empuja el valor que se ocupa
         printf("Recibio: %c", buffer[0]);
 
         memset(buffer, 0, sizeof(buffer));
-        conected = true;
 
-    } else if(conected && !running && !carSelect){
+        player->conected = true;
+
+    } else if(player->conected && !player->running && !player->carSelect){
         //Enviar id y numero de carro
         char valor = player->id + '0';
+
+        printf("\n");
+        printf("%c",valor);
+        printf("\n");
+
         char datos[100] = "PeticionCarro {i,c}";
         datos[15] = valor;
         valor = player->carro + '0';
@@ -90,11 +98,11 @@ struct Player Connect(struct Player* player){
 
         if (buffer[0] != 0) {
             memset(buffer, 0, sizeof(buffer));
-            carSelect = true;
+            player->carSelect = true;
             player->carro = buffer[0];
         }
     }
-    else if (conected && carSelect && !running){
+    else if (player->conected && player->carSelect && !player->running){
         char datos[100] = "{Iniciar}{i}";
         datos[10] = player->id;
 
@@ -104,11 +112,11 @@ struct Player Connect(struct Player* player){
         printf("Recibio: %s", buffer);
         if (buffer[0] == 1) {
 //            memset(buffer, 0, sizeof(buffer));
-            running = true;
+            player->running = true;
         }
 
 
-    } else if (conected && carSelect && running){
+    } else if (player->conected && player->carSelect && player->running){
         createJson();
         send(sSocket, newString, sizeof(newString),0);
 //        memset(buffer, 0, sizeof(buffer));

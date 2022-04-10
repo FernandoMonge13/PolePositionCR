@@ -2,17 +2,15 @@
 // Created by caman on 9/4/2022.
 //
 
-#include <SFML/Graphics.h>
 #include "Menu.h"
 #include "game.c"
-#include "../Client/Client.c"
+
 
 void menu() {
 
     sfVideoMode mode = {840, 650, 32};
     sfRenderWindow* main_window = sfRenderWindow_create(mode, "CSFML works",sfDefaultStyle, NULL);
 
-    Connect();
 
     // redCar
     const sfIntRect redCarRect = {0,0, 61, 119};
@@ -42,6 +40,22 @@ void menu() {
     sfSprite_setTexture(whiteCarSprite, whiteCarTexture, sfTrue);
     sfVector2f whiteCarPos = {500,400};
 
+    struct Player* playerClient = (struct Player*) malloc(sizeof (playerClient));
+
+    playerClient->id = 0;
+    playerClient->puntos = 0;
+    playerClient->vidas = 3;
+    playerClient->posX = 0;
+    playerClient->posY = 0;
+    playerClient->posBalaX = -300;
+    playerClient->posBalaY = 0;
+    playerClient->carro = 0;
+    playerClient->running = false;
+    playerClient->conected = false;
+    playerClient->carSelect = false;
+
+    *playerClient = Connect(playerClient);
+
 
     sfEvent event;
 
@@ -56,16 +70,24 @@ void menu() {
             else if (event.type == sfEvtKeyPressed){
                 switch (event.key.code) {
                     case sfKeyNum1:
-                        game(main_window, redCarSprite, redCarPos);
+                        if (!playerClient->carSelect){
+                            validarCarro(main_window, blueCarSprite, blueCarPos, playerClient, 1);
+                        }
                         break;
                     case sfKeyNum2:
-                        game(main_window, blueCarSprite, blueCarPos);
+                        if (!playerClient->carSelect){
+                            validarCarro(main_window, blueCarSprite, blueCarPos, playerClient, 2);
+                        }
                         break;
                     case sfKeyNum3:
-                        game(main_window, purpleCarSprite, purpleCarPos);
+                        if (!playerClient->carSelect){
+                            validarCarro(main_window, blueCarSprite, blueCarPos, playerClient, 3);
+                        }
                         break;
                     case sfKeyNum4:
-                        game(main_window, whiteCarSprite, whiteCarPos);
+                        if (!playerClient->carSelect){
+                            validarCarro(main_window, blueCarSprite, blueCarPos, playerClient, 4);
+                        }
                         break;
                 }
             }
@@ -89,4 +111,21 @@ void menu() {
 
     }
 
+}
+
+void validarCarro(sfRenderWindow *main_window, sfSprite *sprite, sfVector2f pos, struct Player *player, int carro) {
+
+    player->carro = carro;
+    *player = Connect(player);
+    printf("%s  \n", "algo");
+    if (player->carro == carro){
+        printf("%s \n" ,"algo2");
+        player->carSelect = true;
+
+        while (!player->running){
+            sfSleep(sfSeconds(1));
+            *player = Connect(player);
+        }
+        game(main_window, sprite, pos);
+    }
 }

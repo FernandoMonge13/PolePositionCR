@@ -6,7 +6,7 @@
 #include <winsock2.h>
 #pragma comment(lib,"ws2_32.lib")
 #include <stdio.h>
-#include "../Json/cJSON.h";
+#include "../Json/cJSON.c"
 
 struct Player{
     int id;
@@ -16,6 +16,8 @@ struct Player{
     int posBalaX, posBalaY;
     int carro;
     bool running;
+    bool conected;
+    bool carSelect;
 };
 
 struct Player Connect();
