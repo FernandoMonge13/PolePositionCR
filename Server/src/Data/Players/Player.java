@@ -3,10 +3,10 @@ package Data.Players;
 import Data.Balas.Balas;
 
 public class Player {
-    private Integer id = 0;
-    private Integer puntos;
-    private Integer vidas;
-    private Integer posX, posY;
+    public Integer id = 0;
+    public Integer puntos;
+    public Integer vidas;
+    public Integer posX, posY;
 
     private Balas balas;
 

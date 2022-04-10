@@ -39,7 +39,6 @@ public class Data {
             players.get(i).setId(i+1);
         }
 
-
     }
 
     public void addObject(Objetos object) {

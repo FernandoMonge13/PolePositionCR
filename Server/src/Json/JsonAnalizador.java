@@ -14,7 +14,8 @@ public class JsonAnalizador {
 
     public Player JsonReading(String json) {
         Gson gson = new Gson();
-        Player player = gson.fromJson(json, Player.class);
+
+        Player player = (Player)gson.fromJson(JsonParser(json), Player.class);
         return player;
     }
 
@@ -23,5 +24,24 @@ public class JsonAnalizador {
         Gson gson = new Gson();
         String json = gson.toJson(object);
         return json;
+    }
+
+    public String JsonParser(String jsonR){
+        String aux =jsonR.replaceAll("\"", "");
+        aux=aux.replace("id", "\"id\"");
+        aux=aux.replace("puntos", "\"puntos\"");
+        aux=aux.replace("vidas", "\"vidas\"");
+        aux=aux.replace("posX", "\"posX\"");
+        aux=aux.replace("posY", "\"posY\"");
+        aux=aux.replace("v\"id\"as", "\"vidas\"");
+        aux=aux.replace(" ","");
+        aux=aux.replace("   ","");
+        aux=aux.replace("\n","");
+
+
+        System.out.println(aux);
+
+
+        return aux;
     }
 }

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="Client" targetName="Client" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7e4731f3-41dc-4984-a529-69aec6544bf6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/Client.c" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Client.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/Client.h" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Client.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-client/.cmake/api/v1/query/cache-v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-client/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-client/.cmake/api/v1/query/codemodel-v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-client/.cmake/api/v1/query/toolchains-v1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-client/.cmake/api/v1/reply/cache-v2-85b92eefaaf51408ecc4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-client/.cmake/api/v1/reply/cmakeFiles-v1-bec1b7738d91e6859a14.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-client/.cmake/api/v1/reply/codemodel-v2-b23364ec80b5950f8410.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-client/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-client/.cmake/api/v1/reply/index-2022-04-08T07-29-01-0561.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-client/.cmake/api/v1/reply/target-Client-Debug-af5b509f95fff057dcae.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-client/.cmake/api/v1/reply/toolchains-v1-6840abc5edf67847ef0b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-client/Client.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-client/Client.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-client/libClient.dll.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Client.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libClient.dll.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libClient.dll.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/game.c" beforeDir="false" afterPath="$PROJECT_DIR$/gui/game.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/Data/Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/out/production/Server/Data/Data.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/Servidor/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/out/production/Server/Servidor/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/Servidor/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/Servidor/Server.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2021" />
+    <option name="minorVersion" value="3.4" />
+  </component>
+  <component name="ProjectId" id="27arSnsXWifmBNiC1R2Z5C68CCF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="cmake.loaded.for.project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Escritorio/MANDA/PolePositionCR-e33f60466d970f80f46f67853ca6c204fa03b010/PolePositionCR-e33f60466d970f80f46f67853ca6c204fa03b010/Client" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Client" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Client" TARGET_NAME="Client" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Client" RUN_TARGET_NAME="Client">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7e4731f3-41dc-4984-a529-69aec6544bf6" name="Changes" comment="" />
+      <created>1649569041067</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649569041067</updated>
+      <workItem from="1649569044169" duration="1216000" />
+      <workItem from="1649570430727" duration="2633000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

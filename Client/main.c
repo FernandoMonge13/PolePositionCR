@@ -1,9 +1,9 @@
-#include "gui/game.c"
+
 #include "Client/Client.c"
 
 int main()
 {
-//    Connect();
-    game();
+    Connect();
+ //   game();
     return 0;
 }

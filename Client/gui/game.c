@@ -1,5 +1,5 @@
 #include <SFML/Graphics.h>
-#include "C:\Users\caman\Documents\PolePositionCR - Copy\Client\Client/Client.h"
+#include "../Client/Client.h"
 #include <stdbool.h>
 #include <stdio.h>
 #include "malloc.h"

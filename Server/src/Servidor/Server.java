@@ -24,12 +24,13 @@ public class Server {
     private String getString(DataInputStream inputStream) throws IOException {
         Character aux;
         String inputString = "";
-        do{
-            aux = (char)inputStream.read();
-            inputString += aux;
+        int a;
+        while ((a=inputStream.read())!= 125){
+            inputString +=(char) a;
+        }
+        inputString+="}";
 
-        }while(aux!='}');
-
+        System.out.println(inputString);
         return inputString;
     }
 
@@ -45,39 +46,52 @@ public class Server {
                 DataInputStream inputStream = new DataInputStream(socket.getInputStream());
                 PrintStream outputStream = new PrintStream(socket.getOutputStream());
 
-                System.out.println(this.getString(inputStream));
+//                System.out.println(this.getString(inputStream));
+
+
+
+
+
                 String inputString = this.getString(inputStream);
 
-
-                if(inputString.equals("{nuevoJugador}")){
+                if(inputString.equals("{nuevo Jugador}")){
                     data.addPlayer(new Player());
-                    outputStream.println(data.getPlayers().getLast().getId());
+                    outputStream.println((data.getPlayers().getLast().getId()));
 
                 } else {
 
-                    Player playerReceived = json.JsonReading(inputString);
-                    data.updatePlayers(playerReceived);
+                    System.out.println("GG");
+
+                    Player player = new Player();
+                    player.setPosX(1);
+                    player.setPosY(2);
+                    player.setBalas(new Balas(1,1,3));
+
+                    Player player2 = new Player();
+                    player2.setPosX(3);
+                    player2.setPosY(4);
+                    player2.setBalas(new Balas(2,2,6));
+
+                    data.addPlayer(player);
+                    data.addPlayer(player2);
+
+                    data.addObject(new Hueco(1,1));
+                    data.addObject(new Turbo(2,2));
+                    data.addObject(new Vida(3,3));
+
+//                    json.JsonParser(inputString);
+//
+
+//
+//                    Player playerReceived = json.JsonReading(this.getString(inputStream));
+//                    data.updatePlayers(playerReceived);
                     outputStream.println(json.JsonWritting(data));
+                    System.out.println(json.JsonWritting(data));
                 }
 
-                Player player = new Player();
-                player.setPosX(1);
-                player.setPosY(2);
-                player.setBalas(new Balas(1,1,3));
 
-                Player player2 = new Player();
-                player2.setPosX(3);
-                player2.setPosY(4);
-                player2.setBalas(new Balas(2,2,6));
 
-                data.addPlayer(player);
-                data.addPlayer(player2);
-
-                data.addObject(new Hueco(1,1));
-                data.addObject(new Turbo(2,2));
-                data.addObject(new Vida(3,3));
-
-                System.out.println("Información enviada:\n" + json.JsonWritting(data));
+                //System.out.println("Información enviada:\n" + json.JsonWritting(data));
 
 //                Player player = new Player();
 //                player.setPosX(1);
@@ -97,10 +111,12 @@ public class Server {
             }
 
         } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ParseException e) {
+            e.printStackTrace();} catch (ParseException e) {
             e.printStackTrace();
         }
+//         catch (ParseException e) {
+//            e.printStackTrace();
+//        }
     }
 
 }
