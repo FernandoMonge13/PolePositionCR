@@ -200,3 +200,4 @@ void readJson(char *info){
     printf("%s", name);
 
 }
+

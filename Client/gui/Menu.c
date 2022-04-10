@@ -129,3 +129,4 @@ void validarCarro(sfRenderWindow *main_window, sfSprite *sprite, sfVector2f pos,
         game(main_window, sprite, pos);
     }
 }
+
