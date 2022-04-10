@@ -1,16 +1,17 @@
 package Data.Players;
 
-import Data.Balas.Balas;
-
 public class Player {
     public Integer id = 0;
     public Integer puntos;
     public Integer vidas;
     public Integer posX, posY;
+    public Integer posBalaX, posBalaY;
 
-    private Balas balas;
+    public boolean startGame = false;
 
-    public Player() {
+    public Integer carro = 0;
+
+        public Player() {
         this.vidas = 3;
         this.puntos = 0;
     }
@@ -61,12 +62,36 @@ public class Player {
         this.posY = posY;
     }
 
-    public Balas getBalas() {
-        return balas;
+    public Integer getPosBalaX() {
+        return posBalaX;
     }
 
-    public void setBalas(Balas balas) {
-        this.balas = balas;
+    public void setPosBalaX(Integer posBalaX) {
+        this.posBalaX = posBalaX;
+    }
+
+    public Integer getPosBalaY() {
+        return posBalaY;
+    }
+
+    public void setPosBalaY(Integer posBalaY) {
+        this.posBalaY = posBalaY;
+    }
+
+    public boolean isStartGame() {
+        return startGame;
+    }
+
+    public void setStartGame(boolean startGame) {
+        this.startGame = startGame;
+    }
+
+    public Integer getCarro() {
+        return carro;
+    }
+
+    public void setCarro(Integer carro) {
+        this.carro = carro;
     }
 }
 

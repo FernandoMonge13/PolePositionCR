@@ -7,36 +7,37 @@
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e4731f3-41dc-4984-a529-69aec6544bf6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+    <list default="true" id="a8ee8593-f660-4f68-b478-f386c1f1c6fe" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/Client.c" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Client.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/Client.h" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Client.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-client/.cmake/api/v1/query/cache-v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-client/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-client/.cmake/api/v1/query/codemodel-v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-client/.cmake/api/v1/query/toolchains-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-client/.cmake/api/v1/reply/cache-v2-85b92eefaaf51408ecc4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-client/.cmake/api/v1/reply/cmakeFiles-v1-bec1b7738d91e6859a14.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-client/.cmake/api/v1/reply/codemodel-v2-b23364ec80b5950f8410.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-client/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-client/.cmake/api/v1/reply/index-2022-04-08T07-29-01-0561.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-client/.cmake/api/v1/reply/target-Client-Debug-af5b509f95fff057dcae.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-client/.cmake/api/v1/reply/toolchains-v1-6840abc5edf67847ef0b.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-client/Client.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-client/Client.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-client/libClient.dll.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Client.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Json/cJSON.c" beforeDir="false" afterPath="$PROJECT_DIR$/Json/cJSON.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Json/cJSON.h" beforeDir="false" afterPath="$PROJECT_DIR$/Json/cJSON.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/libClient.dll.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libClient.dll.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/game.c" beforeDir="false" afterPath="$PROJECT_DIR$/gui/game.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/Data/Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/out/production/Server/Data/Data.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/Servidor/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/out/production/Server/Servidor/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/Cliente/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/Cliente/ClientThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/Data/Balas/Balas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/Data/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/Data/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/Data/Objects/Hueco.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/Data/Objects/Hueco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/Data/Objects/Objetos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/Data/Objects/Objetos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/Data/Objects/Turbo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/Data/Objects/Turbo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/Data/Objects/Vida.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/Data/Objects/Vida.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/Data/Players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/Data/Players/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/Json/JsonBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/Json/JsonLecturaBuilder.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/src/Servidor/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/Servidor/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,12 +54,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectApplicationVersion">
-    <option name="ide" value="CLion" />
-    <option name="majorVersion" value="2021" />
-    <option name="minorVersion" value="3.4" />
-  </component>
-  <component name="ProjectId" id="27arSnsXWifmBNiC1R2Z5C68CCF" />
+  <component name="ProjectId" id="27aytubuleBA9rx5a0DBEC0nfWX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -72,7 +68,7 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Escritorio/MANDA/PolePositionCR-e33f60466d970f80f46f67853ca6c204fa03b010/PolePositionCR-e33f60466d970f80f46f67853ca6c204fa03b010/Client" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Client" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Client" TARGET_NAME="Client" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Client" RUN_TARGET_NAME="Client">
@@ -85,17 +81,22 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7e4731f3-41dc-4984-a529-69aec6544bf6" name="Changes" comment="" />
-      <created>1649569041067</created>
+      <changelist id="a8ee8593-f660-4f68-b478-f386c1f1c6fe" name="Changes" comment="" />
+      <created>1649572709326</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1649569041067</updated>
-      <workItem from="1649569044169" duration="1216000" />
-      <workItem from="1649570430727" duration="2633000" />
+      <updated>1649572709326</updated>
+      <workItem from="1649572714446" duration="13673000" />
+      <workItem from="1649588082222" duration="10211000" />
     </task>
     <servers />
   </component>

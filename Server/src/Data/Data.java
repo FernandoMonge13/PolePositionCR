@@ -1,13 +1,11 @@
 package Data;
 
-import Data.Balas.Balas;
 import Data.Objects.Objetos;
 import Data.Players.Player;
 import java.util.LinkedList;
 import java.util.Objects;
 
 public class Data {
-
     LinkedList<Player> players;
     LinkedList<Objetos> objects;
 
@@ -67,6 +65,10 @@ public class Data {
     }
 
     public void updatePlayers(Player playerReceived){
+        if (players.size()==0){
+            addPlayer(playerReceived);
+        }
+
         for (int i = 0; i < players.size(); i++) {
             if (playerReceived.getId().equals(players.get(i).getId())) {
 
@@ -79,6 +81,40 @@ public class Data {
         }
     }
 
+    public void tryToSetCarById(Integer id, Integer carId){
+        LinkedList<Integer> cars = new LinkedList<>();
+
+        for (int i = 0; i < players.size(); i++) {
+            cars.add(players.get(i).getCarro());
+        }
+
+
+        for (int i = 0; i < players.size(); i++) {
+            if (players.get(i).getId().equals(id)) {
+                if (players.get(i).getCarro()==0 && !cars.contains(carId)) {
+                    players.get(i).setCarro(carId);
+                }
+            }
+        }
+    }
+
+    public void tryToStartById(Integer id){
+        for (int i = 0; i < players.size(); i++) {
+            if (players.get(i).getId().equals(id)) {
+                players.get(i).setStartGame(true);
+            }
+        }
+    }
+
+    public Player getPlayerById(Integer id){
+        for (int i = 0; i < players.size(); i++) {
+            if (players.get(i).getId().equals(id)) {
+                return players.get(i);
+            }
+        }
+        return null;
+    }
+
     public void updateObjects(Objetos objectListReceived[]){
         for (int i = 0; i < objectListReceived.length; i++) {
             if (objectListReceived[i].getId().equals(objects.get(i).getId())) {
@@ -89,7 +125,7 @@ public class Data {
         }
     }
 
-    public void update(Player playerReceived, Objetos objectListReceived[], Balas balaListReceived[]){
+    public void update(Player playerReceived, Objetos objectListReceived[]){
         updatePlayers(playerReceived);
         updateObjects(objectListReceived);
     }

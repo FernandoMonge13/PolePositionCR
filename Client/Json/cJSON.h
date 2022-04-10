@@ -48,7 +48,7 @@ or
 -xldscope=hidden (for sun cc)
 to CFLAGS
 
-then using the CJSON_API_VISIBILITY flag to "export" the same symbols the way CJSON_EXPORT_SYMBOLS does
+then using the CJSON_API_VISIBILITY conected to "export" the same symbols the way CJSON_EXPORT_SYMBOLS does
 
 */
 

@@ -1,9 +1,8 @@
+#include <stdio.h>
+#include "Client/Client.h"
 
-#include "Client/Client.c"
-
-int main()
-{
+int main() {
+//    createJson();
     Connect();
- //   game();
     return 0;
 }

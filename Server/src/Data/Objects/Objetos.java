@@ -3,11 +3,14 @@ package Data.Objects;
 public class Objetos {
 
     private Integer posX, posY;
+    private String tipo;
+    private Integer id;
 
 
-    public Objetos(Integer posX, Integer posY){
+    public Objetos(Integer posX, Integer posY, String tipo) {
         this.posX = posX;
         this.posY = posY;
+        this.tipo = tipo;
     }
 
     public Integer getPosX() {
@@ -34,5 +37,12 @@ public class Objetos {
         this.id = id;
     }
 
-    private Integer id;
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
 }

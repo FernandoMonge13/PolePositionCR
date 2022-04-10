@@ -926,7 +926,7 @@ static cJSON_bool print_string_ptr(const unsigned char * const input, printbuffe
         return true;
     }
 
-    /* set "flag" to 1 if something needs to be escaped */
+    /* set "conected" to 1 if something needs to be escaped */
     for (input_pointer = input; *input_pointer; input_pointer++)
     {
         switch (*input_pointer)

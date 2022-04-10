@@ -4,7 +4,7 @@ public class Turbo extends Objetos {
     private Integer speed;
 
     public Turbo(Integer posX, Integer posY) {
-        super(posX, posY);
+        super(posX, posY,"Turbo");
         this.speed = 20;
 
     }
