@@ -6,7 +6,7 @@
 #include <winsock2.h>
 #pragma comment(lib,"ws2_32.lib")
 #include <stdio.h>
-#include "../Json/cJSON.c"
+#include "../Json/cJSON.h";
 
 bool Connect();
 void createJson();
