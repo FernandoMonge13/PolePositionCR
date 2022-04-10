@@ -7,10 +7,7 @@ import Data.Objects.Vida;
 import Data.Players.Player;
 import Json.JsonAnalizador;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.PrintStream;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.text.ParseException;
@@ -39,7 +36,7 @@ public class Server {
 
             System.out.print("Servidor iniciado...\n");
 
-            data.addPlayer(new Player());;
+//            data.addPlayer(new Player());;
 
 
 
@@ -56,11 +53,17 @@ public class Server {
                     outputStream.println((data.getPlayers().getLast().getId()));
 
                 } else if(inputString.contains("PeticionCarro")){
-                    String aux = String.valueOf(inputString.charAt(15));
-                    Integer id = Integer.parseInt(aux);
+                    char aux = inputString.charAt(15);
+                    int id = (int)aux;
+                    id -= 96;
 
-                    aux = String.valueOf(inputString.charAt(17));
-                    Integer car = Integer.parseInt(aux);
+//                    Integer id = Integer.parseInt(aux);
+
+                    System.out.println(id);
+
+
+                    String aux2 = String.valueOf(inputString.charAt(17));
+                    Integer car = Integer.parseInt(aux2);
 
                     data.tryToSetCarById(id, car);
 
@@ -69,10 +72,13 @@ public class Server {
                 }
 
                 else if(inputString.contains("Iniciar")){
-                    data.tryToStartById(Integer.parseInt(String.valueOf(inputString.charAt(10))));
+                    System.out.println(inputString);
+                    Integer id = (Integer.parseInt(String.valueOf(inputString.charAt(8))));
+                    data.tryToStartById(id);
+                    outputStream.println("1");
+
 
                 }else {
-
                     System.out.println("GG");
 
 //                    Player player = new Player();

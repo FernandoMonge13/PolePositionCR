@@ -5,6 +5,7 @@
 
 #include "Client.h"
 
+
 //bool conected = true;
 //bool running = false;
 //bool carSelect = false;
@@ -17,7 +18,6 @@ char* sendInfo;
 struct Data{
 
 };
-
 
 
 
@@ -91,26 +91,29 @@ struct Player Connect(struct Player* player){
         valor = player->carro + '0';
         datos[17] = valor;
 
-        send(sSocket, datos, sizeof(datos),0);
+        send(sSocket, datos, sizeof(datos), 0);
+        memset(buffer, 0, sizeof(buffer));
         recv(sSocket, buffer, sizeof(buffer), 0);
         player->carro = buffer[0];
         printf("Recibio: %c", buffer[0]);
 
         if (buffer[0] != 0) {
-            memset(buffer, 0, sizeof(buffer));
             player->carSelect = true;
-            player->carro = buffer[0];
+            player->carro = (int) buffer[0];
+            player->carro -= 48;
         }
     }
     else if (player->conected && player->carSelect && !player->running){
-        char datos[100] = "{Iniciar}{i}";
-        datos[10] = player->id;
+        char datos[100] = "{Iniciar,i}";
+         datos[8] = player->id;
 
         send(sSocket, datos, sizeof(datos),0);
+        player->carSelect = true;
         recv(sSocket, buffer, sizeof(buffer), 0);
 
-        printf("Recibio: %s", buffer);
-        if (buffer[0] == 1) {
+//        printf("Recibio: %s", buffer[0]);
+        int aux = (int)buffer[0]-48;
+        if (aux == 1) {
 //            memset(buffer, 0, sizeof(buffer));
             player->running = true;
         }

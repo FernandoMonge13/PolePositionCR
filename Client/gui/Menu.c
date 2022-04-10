@@ -117,11 +117,11 @@ void validarCarro(sfRenderWindow *main_window, sfSprite *sprite, sfVector2f pos,
 
     player->carro = carro;
     *player = Connect(player);
-    printf("%s  \n", "algo");
+    printf("%s  \n", "rcvMSG");
+    printf("%d \n", player->carro);
+    printf("%d \n", carro);
     if (player->carro == carro){
-        printf("%s \n" ,"algo2");
         player->carSelect = true;
-
         while (!player->running){
             sfSleep(sfSeconds(1));
             *player = Connect(player);

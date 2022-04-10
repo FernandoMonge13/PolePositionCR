@@ -83,9 +83,16 @@ public class Data {
 
     public void tryToSetCarById(Integer id, Integer carId){
         LinkedList<Integer> cars = new LinkedList<>();
+        LinkedList<Integer> carsNo = new LinkedList<>();
 
         for (int i = 0; i < players.size(); i++) {
             cars.add(players.get(i).getCarro());
+        }
+
+        for (int i = 1; i < 5; i++) {
+            if(!cars.contains(i)){
+                carsNo.add(i);
+            }
         }
 
 
@@ -93,6 +100,11 @@ public class Data {
             if (players.get(i).getId().equals(id)) {
                 if (players.get(i).getCarro()==0 && !cars.contains(carId)) {
                     players.get(i).setCarro(carId);
+                } else if(players.get(i).getCarro()==0 && cars.contains(carId) && (carsNo.size() != 0)){
+                        players.get(i).setCarro(carsNo.get(0));
+                        carsNo.remove(0);
+                }else{
+                    System.out.println("No se pueden agregar más jugadores Man");
                 }
             }
         }
