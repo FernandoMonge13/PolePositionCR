@@ -7,5 +7,6 @@ int main() {
 //    struct Player *player;
 //    Connect(player);
     menu();
+//    game2();
     return 0;
 }

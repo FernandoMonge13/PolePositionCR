@@ -14,4 +14,7 @@
 // Controla el menu del juego donde se selecciona el carro deseado
 void menu();
 
+// parece que funciona si creo la ventana y demás en la misma funcion
+void game2();
+
 void validarCarro(sfRenderWindow* main_window, sfSprite* sprite, sfVector2f pos, struct Player* player, int carro);
