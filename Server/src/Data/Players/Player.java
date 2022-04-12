@@ -5,7 +5,7 @@ public class Player {
     public Integer puntos;
     public Integer vidas;
     public Integer posX, posY;
-    public Integer posBalaX, posBalaY;
+    public Integer posBalaX=-300, posBalaY=0;
 
     public boolean startGame = false;
 
@@ -92,6 +92,29 @@ public class Player {
 
     public void setCarro(Integer carro) {
         this.carro = carro;
+
+        switch (carro) {
+            case 1:
+                this.posX = 150;
+                this.posY = 400;
+                break;
+
+            case 2:
+                this.posX = 250;
+                this.posY = 400;
+                break;
+
+            case 3:
+                this.posX = 400;
+                this.posY = 400;
+                break;
+
+            case 4:
+                this.posX = 500;
+                this.posY = 400;
+                break;
+
+        }
     }
 }
 

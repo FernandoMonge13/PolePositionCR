@@ -79,7 +79,7 @@ public class Server {
                 }
 
                 else if(inputString.contains("Iniciar")){
-                    System.out.println(inputString);
+//                    System.out.println(inputString);
                     Integer id = (Integer.parseInt(String.valueOf(inputString.charAt(8))));
                     data.tryToStartById(id);
 
@@ -89,6 +89,8 @@ public class Server {
                         outputStream.println("0");
                     }
 
+
+//                    System.out.println(getParsedJsonToSend(json.JsonWritting(data)));
 
                 }else {
                     System.out.println("GG");
@@ -116,8 +118,8 @@ public class Server {
                     System.out.println(playerReceived.getId());
                     data.updatePlayers(playerReceived);
 
-                    outputStream.println(json.JsonWritting(data));
-                    System.out.println(json.JsonWritting(data));
+                    outputStream.println(getParsedJsonToSend(json.JsonWritting(data)));
+                    System.out.println(getParsedJsonToSend(json.JsonWritting(data)));
                 }
 
 
@@ -147,6 +149,29 @@ public class Server {
          catch (ParseException e) {
             e.printStackTrace();
         }
+    }
+
+    public String getParsedJsonToSend(String jsonToSend){
+
+        String newInfo = jsonToSend.replaceAll("\\{\"id\"", "\"PlayerZ\":{\"id\"");
+        newInfo = newInfo.replaceAll("\\{\"posX\"", "\"ObjetoQ\":{\"posX\"");
+//        System.out.println(newInfo);
+
+        Integer count = 1, count2 = 1;
+        for (int i = 0; i < newInfo.length(); i++) {
+            if (newInfo.charAt(i) == 'Z') {
+                StringBuilder sb = new StringBuilder(newInfo);
+                sb.setCharAt(i, count.toString().charAt(0));
+                newInfo = sb.toString();
+                count++;
+            } else if (newInfo.charAt(i) == 'Q') {
+                StringBuilder sb = new StringBuilder(newInfo);
+                sb.setCharAt(i, count2.toString().charAt(0)); //Esto indica que la cantidad de objetos puede ser de 1 a 9
+                newInfo = sb.toString();
+                count2++;
+            }
+        }
+        return newInfo;
     }
 
 }
