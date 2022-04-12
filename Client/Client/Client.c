@@ -108,13 +108,12 @@ struct Player Connect(struct Player* player){
          datos[8] = player->id;
 
         send(sSocket, datos, sizeof(datos),0);
-        player->carSelect = true;
+        memset(buffer, 0, sizeof(buffer));
         recv(sSocket, buffer, sizeof(buffer), 0);
 
 //        printf("Recibio: %s", buffer[0]);
         int aux = (int)buffer[0]-48;
         if (aux == 1) {
-//            memset(buffer, 0, sizeof(buffer));
             player->running = true;
         }
 

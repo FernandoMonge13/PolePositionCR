@@ -2,7 +2,9 @@ package Data;
 
 import Data.Objects.Objetos;
 import Data.Players.Player;
-import java.util.LinkedList;
+import LinkedList.LinkedList;
+//import java.util.LinkedList;
+
 import java.util.Objects;
 
 public class Data {
@@ -10,8 +12,8 @@ public class Data {
     LinkedList<Objetos> objects;
 
     public Data() {
-        players = new LinkedList<>();
-        objects = new LinkedList<>();
+        players = new LinkedList<Player>();
+        objects = new LinkedList<Objetos>();
     }
 
     public void setPlayers(LinkedList<Player> players) {
@@ -82,8 +84,8 @@ public class Data {
     }
 
     public void tryToSetCarById(Integer id, Integer carId){
-        LinkedList<Integer> cars = new LinkedList<>();
-        LinkedList<Integer> carsNo = new LinkedList<>();
+        LinkedList<Integer> cars = new LinkedList<Integer>();
+        LinkedList<Integer> carsNo = new LinkedList<Integer>();
 
         for (int i = 0; i < players.size(); i++) {
             cars.add(players.get(i).getCarro());
@@ -116,6 +118,18 @@ public class Data {
                 players.get(i).setStartGame(true);
             }
         }
+    }
+
+    public Integer startedGame(){
+
+        int count = 0;
+        for (int i = 0; i < players.size(); i++) {
+            if (players.get(i).isStartGame()) {
+                count++;
+            }
+        }
+
+        return count;
     }
 
     public Player getPlayerById(Integer id){

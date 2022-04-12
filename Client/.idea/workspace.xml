@@ -13,9 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a8ee8593-f660-4f68-b478-f386c1f1c6fe" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Client.c" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Client.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Client.h" beforeDir="false" afterPath="$PROJECT_DIR$/Client/Client.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libClient.dll.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libClient.dll.a" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,15 +43,11 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../../../Acceso rapido/Descargas/PolePositionCR-master/GUI" />
   </component>
   <component name="RunManager">
     <configuration name="Client" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Client" TARGET_NAME="Client" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Client" RUN_TARGET_NAME="Client">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -76,7 +69,9 @@
       <workItem from="1649572714446" duration="13673000" />
       <workItem from="1649588082222" duration="10211000" />
       <workItem from="1649608630580" duration="54000" />
-      <workItem from="1649608737288" duration="726000" />
+      <workItem from="1649608737288" duration="1746000" />
+      <workItem from="1649623518515" duration="2569000" />
+      <workItem from="1649650053416" duration="1315000" />
     </task>
     <servers />
   </component>

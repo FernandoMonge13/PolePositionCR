@@ -11,6 +11,7 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.text.ParseException;
+import java.util.Objects;
 
 public class Server {
 
@@ -29,7 +30,13 @@ public class Server {
         return inputString;
     }
 
-    public  void Server() {
+    public  void Server(Integer cantidadJugadores) {
+
+        if (cantidadJugadores > 4) {
+            cantidadJugadores = 4;
+        } else if (cantidadJugadores < 2)
+            cantidadJugadores = 2;
+        
         try {
             ServerSocket serverSocket = new ServerSocket(5000);
             Socket socket;
@@ -75,7 +82,12 @@ public class Server {
                     System.out.println(inputString);
                     Integer id = (Integer.parseInt(String.valueOf(inputString.charAt(8))));
                     data.tryToStartById(id);
-                    outputStream.println("1");
+
+                    if(Objects.equals(data.startedGame(), cantidadJugadores)){
+                        outputStream.println("1");
+                    } else {
+                        outputStream.println("0");
+                    }
 
 
                 }else {

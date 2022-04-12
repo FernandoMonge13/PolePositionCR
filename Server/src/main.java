@@ -8,7 +8,7 @@ public class main {
     public static void main(String[] args) throws ParseException, java.text.ParseException {
 
        Server myserver = new Server();
-       myserver.Server();
+       myserver.Server(4);
 
 
 
