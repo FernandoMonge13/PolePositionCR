@@ -115,7 +115,15 @@ void game(sfRenderWindow* main_window, sfSprite* sprite, sfVector2f pos, struct 
     sfSprite_setTexture(road2, road_texture, sfTrue);
     sfVector2f road2Pos = {0,-648};
 
-//    sfView* view = sfView_createFromRect(rect2);
+    // turbo
+    const sfIntRect turboRect = {0,0, 100, 63};
+    sfTexture* turboTexture = sfTexture_createFromFile("../Assets/turbo.png", &turboRect);
+    sfSprite* turboSprite = sfSprite_create();
+    sfSprite_setTexture(turboSprite, turboTexture, sfTrue);
+    sfVector2f turboPos = {200,50};
+    sfSprite_setPosition(turboSprite, turboPos);
+
+
 
     sfEvent event;
 //    sfFloatRect_intersects()
@@ -217,10 +225,14 @@ void game(sfRenderWindow* main_window, sfSprite* sprite, sfVector2f pos, struct 
         sfSprite_setPosition(road, roadPos);
         sfSprite_setPosition(road2, road2Pos);
         sfSprite_setPosition(sprite, pos);
+
         sfRenderWindow_drawSprite(main_window, road, NULL);
         sfRenderWindow_drawSprite(main_window, road2, NULL);
         sfRenderWindow_drawSprite(main_window, playerBullet_Sprite, NULL);
         sfRenderWindow_drawSprite(main_window, sprite, NULL);
+        sfRenderWindow_drawSprite(main_window, turboSprite, NULL);
+
+
         sfRenderWindow_drawText(main_window, lifes_txt, NULL);
         sfRenderWindow_drawText(main_window, nlifes_txt, NULL);
         sfRenderWindow_drawText(main_window, pts_txt, NULL);

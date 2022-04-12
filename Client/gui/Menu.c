@@ -14,6 +14,16 @@ void menu() {
     sfVideoMode mode = {1000, 650, 32};
     sfRenderWindow* main_window = sfRenderWindow_create(mode, "CSFML works",sfDefaultStyle, NULL);
     sfRenderWindow_setFramerateLimit(main_window, 60);
+
+
+    // hueco
+    const sfIntRect huecoRect = {0,0, 500, 300};
+    sfTexture* huecoTexture = sfTexture_createFromFile("../Assets/hole2.jpg", &huecoRect);
+    sfSprite* huecoSprite = sfSprite_create();
+    sfSprite_setTexture(huecoSprite, huecoTexture, sfTrue);
+    sfVector2f huecoPos = {200,50};
+    sfSprite_setPosition(huecoSprite, huecoPos);
+
     // redCar
     const sfIntRect redCarRect = {0,0, 61, 119};
     sfTexture* redCarTexture = sfTexture_createFromFile("../Assets/chuzoCE.png", &redCarRect);
@@ -56,7 +66,7 @@ void menu() {
     playerClient->conected = false;
     playerClient->carSelect = false;
 
-    *playerClient = Connect(playerClient);
+//    *playerClient = Connect(playerClient);
 
 
     sfEvent event;
@@ -106,6 +116,7 @@ void menu() {
         sfRenderWindow_drawSprite(main_window, blueCarSprite, NULL);
         sfRenderWindow_drawSprite(main_window, purpleCarSprite, NULL);
         sfRenderWindow_drawSprite(main_window, whiteCarSprite, NULL);
+        sfRenderWindow_drawSprite(main_window, huecoSprite, NULL);
 
         sfRenderWindow_display(main_window);
 //        printf("%d", delta)
@@ -118,20 +129,20 @@ void menu() {
 
 void validarCarro(sfRenderWindow *main_window, sfSprite *sprite, sfVector2f pos, struct Player *player, int carro) {
 
-    player->carro = carro;
-    *player = Connect(player);
-    printf("%s  \n", "rcvMSG");
-    printf("%d \n", player->carro);
-    printf("%d \n", carro);
-    if (player->carro == carro){
-        player->carSelect = true;
-        while (!player->running){
-            sfSleep(sfSeconds(1));
-            *player = Connect(player);
-        }
-        game(main_window, sprite, pos, player);
-    }
-//    game(main_window, sprite, pos, player);
+//    player->carro = carro;
+//    *player = Connect(player);
+//    printf("%s  \n", "rcvMSG");
+//    printf("%d \n", player->carro);
+//    printf("%d \n", carro);
+//    if (player->carro == carro){
+//        player->carSelect = true;
+//        while (!player->running){
+//            sfSleep(sfSeconds(1));
+//            *player = Connect(player);
+//        }
+//        game(main_window, sprite, pos, player);
+//    }
+    game(main_window, sprite, pos, player);
 
 }
 /*
