@@ -5,8 +5,8 @@
 int main() {
 //    createJson();
 //    struct Player *player;
-//    Connect(player);
-    menu();
+    Connect(player);
+//    menu();
 //    game2();
     return 0;
 }

@@ -36,7 +36,7 @@ public class Server {
             cantidadJugadores = 4;
         } else if (cantidadJugadores < 2)
             cantidadJugadores = 2;
-        
+
         try {
             ServerSocket serverSocket = new ServerSocket(5000);
             Socket socket;

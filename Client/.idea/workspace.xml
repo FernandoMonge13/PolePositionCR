@@ -13,6 +13,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a8ee8593-f660-4f68-b478-f386c1f1c6fe" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libClient.dll.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libClient.dll.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/Data/Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/out/production/Server/Data/Data.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/out/production/Server/Servidor/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/out/production/Server/Servidor/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/Data/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/Data/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/Servidor/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/Servidor/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +79,7 @@
       <workItem from="1649608737288" duration="1746000" />
       <workItem from="1649623518515" duration="2569000" />
       <workItem from="1649650053416" duration="1315000" />
+      <workItem from="1649726626359" duration="2295000" />
     </task>
     <servers />
   </component>
