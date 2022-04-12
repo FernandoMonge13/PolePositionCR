@@ -18,41 +18,33 @@ public class Server {
     private Data data = new Data();
     private JsonAnalizador json = new JsonAnalizador();
 
-    private String getString(DataInputStream inputStream) throws IOException {
-        String inputString = "";
-        int a;
-        while ((a=inputStream.read())!= 125){
-            inputString +=(char) a;
-        }
-        inputString+="}";
-
-        System.out.println(inputString);
-        return inputString;
-    }
-
+    /**
+     * funcion que se encarga de enviar y recibir los datos al cliente
+     * @param cantidadJugadores cantidad de jugadores
+     * @throws IOException
+     */
     public  void Server(Integer cantidadJugadores) {
 
+        //Se verifica que la cantidad de jugadores sea mayor o igual a 2 y menor o igual a 4
         if (cantidadJugadores > 4) {
             cantidadJugadores = 4;
         } else if (cantidadJugadores < 2)
             cantidadJugadores = 2;
 
         try {
+            // Se crea el socket del servidor
             ServerSocket serverSocket = new ServerSocket(5000);
             Socket socket;
 
             System.out.print("Servidor iniciado...\n");
 
-//            data.addPlayer(new Player());;
-
-
-
-
+            // Se acepta la conexion del cliente
             while (true) {
                 socket = serverSocket.accept();
                 DataInputStream inputStream = new DataInputStream(socket.getInputStream());
                 PrintStream outputStream = new PrintStream(socket.getOutputStream());
 
+                // Se recibe el json del cliente y se analiza
                 String inputString = this.getString(inputStream);
 
                 if(inputString.contains("nuevo Jugador")){
@@ -64,10 +56,7 @@ public class Server {
                     int id = (int)aux;
                     id -= 96;
 
-//                    Integer id = Integer.parseInt(aux);
-
                     System.out.println(id);
-
 
                     String aux2 = String.valueOf(inputString.charAt(17));
                     Integer car = Integer.parseInt(aux2);
@@ -134,23 +123,38 @@ public class Server {
 
 //                System.out.println(json.JsonWritting(data));
 
-//                outputStream.writeUTF("Hola cliente " + nombreCliente + "!\n");
-//                ServerThread hilo = new ServerThread(inputStream, outputStream, nombreCliente);
-//                hilo.start();
-//
-//                System.out.println("Cliente conectado: " + nombreCliente);
-
 
             }
 
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-         catch (ParseException e) {
+        } catch (IOException | ParseException e) {
             e.printStackTrace();
         }
     }
 
+    /**
+     * funcion que se encarga de recibir los datos del cliente
+     * @param inputStream flujo de entrada
+     * @return inputStream
+     * @throws IOException
+     */
+
+    private String getString(DataInputStream inputStream) throws IOException {
+        String inputString = "";
+        int a;
+        while ((a=inputStream.read())!= 125){
+            inputString +=(char) a;
+        }
+        inputString+="}";
+
+        System.out.println(inputString);
+        return inputString;
+    }
+
+    /**
+     * Método que le da al json un formato para que sea enviado al cliente
+     * @param jsonToSend
+     * @return
+     */
     public String getParsedJsonToSend(String jsonToSend){
 
         String newInfo = jsonToSend.replaceAll("\\{\"id\"", "\"PlayerZ\":{\"id\"");

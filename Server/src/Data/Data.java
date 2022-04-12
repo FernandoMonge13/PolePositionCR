@@ -11,27 +11,50 @@ public class Data {
     LinkedList<Player> players;
     LinkedList<Objetos> objects;
 
+    /**
+     * Contructor de la clase Data
+     */
     public Data() {
         players = new LinkedList<Player>();
         objects = new LinkedList<Objetos>();
     }
 
+    /**
+     * Permite definir una lista de jugadores
+     * @param players
+     */
     public void setPlayers(LinkedList<Player> players) {
         this.players = players;
     }
 
+    /**
+     * Permite definir una lista de objetos
+     * @param objects
+     */
     public void setObjects(LinkedList<Objetos> objects) {
         this.objects = objects;
     }
 
+    /**
+     * Permite obtener la lista de jugadores
+     * @return
+     */
     public LinkedList<Player> getPlayers() {
         return players;
     }
 
+    /**
+     * Permite obtener la lista de objetos
+     * @return
+     */
     public LinkedList<Objetos> getObjects() {
         return objects;
     }
 
+    /**
+     * Permite agregar un jugador a la lista de jugadores
+     * @param player
+     */
     public void addPlayer(Player player) {
 
         players.add(player);
@@ -41,31 +64,56 @@ public class Data {
 
     }
 
+    /**
+     * Permite agregar un objeto a la lista de objetos
+     * @param object
+     */
     public void addObject(Objetos object) {
         objects.add(object);
     }
 
+    /**
+     * Permite eliminar un jugador de la lista de jugadores
+     * @param player
+     */
     public void removePlayer(Player player) {
         players.remove(player);
     }
 
+    /**
+     * Permite eliminar un objeto de la lista de objetos
+     * @param object
+     */
     public void removeObject(Objects object) {
         objects.remove(object);
     }
 
+    /**
+     * Permite limpiar la lista de jugadores
+     */
     public void clearPlayers() {
         players.clear();
     }
 
+    /**
+     * Permite limpiar la lista de objetos
+     */
     public void clearObjects() {
         objects.clear();
     }
 
+    /**
+     * Permite limpiar las listas de jugadores y objetos
+     */
     public void clear() {
         clearPlayers();
         clearObjects();
     }
 
+    /**
+     * Permite actualizar la información almacenada de un jugador
+     * @param playerReceived
+     */
     public void updatePlayers(Player playerReceived){
         if (players.size()==0){
             addPlayer(playerReceived);
@@ -83,6 +131,11 @@ public class Data {
         }
     }
 
+    /**
+     * Intenta actualizar la información del carro que posee un jugador de acuerdo a su id y el carro que se recibe, en caso de no estar disponible, le asigna uno nuevo
+     * @param id
+     * @param carId
+     */
     public void tryToSetCarById(Integer id, Integer carId){
         LinkedList<Integer> cars = new LinkedList<Integer>();
         LinkedList<Integer> carsNo = new LinkedList<Integer>();
@@ -112,6 +165,10 @@ public class Data {
         }
     }
 
+    /**
+     * Indica en la lista de jugadores que el jugador está listo para iniciar
+     * @param id
+     */
     public void tryToStartById(Integer id){
         for (int i = 0; i < players.size(); i++) {
             if (players.get(i).getId().equals(id)) {
@@ -120,6 +177,10 @@ public class Data {
         }
     }
 
+    /**
+     * Retorna la cantidad de jugadores que se encuentran listos para iniciar el juego
+     * @return count
+     */
     public Integer startedGame(){
 
         int count = 0;
@@ -132,6 +193,11 @@ public class Data {
         return count;
     }
 
+    /**
+     * Retorna el jugaddor que posee el id que se recibe
+     * @param id
+     * @return player.get(i) si existe, null si no existe
+     */
     public Player getPlayerById(Integer id){
         for (int i = 0; i < players.size(); i++) {
             if (players.get(i).getId().equals(id)) {
@@ -141,6 +207,10 @@ public class Data {
         return null;
     }
 
+    /**
+     * Actualiza la lista de objetos con los objetos que se reciben
+     * @param objectListReceived
+     */
     public void updateObjects(Objetos objectListReceived[]){
         for (int i = 0; i < objectListReceived.length; i++) {
             if (objectListReceived[i].getId().equals(objects.get(i).getId())) {
@@ -151,6 +221,11 @@ public class Data {
         }
     }
 
+    /**
+     * Actualiza la lista de objetos y de jugadores con los objetos y jugadores que se reciben que se reciben
+     * @param playerReceived
+     * @param objectListReceived
+     */
     public void update(Player playerReceived, Objetos objectListReceived[]){
         updatePlayers(playerReceived);
         updateObjects(objectListReceived);
