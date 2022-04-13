@@ -66,7 +66,7 @@ void menu() {
     playerClient->conected = false;
     playerClient->carSelect = false;
 
-//    *playerClient = Connect(playerClient);
+    *playerClient = Connect(playerClient);
 
 
     sfEvent event;
@@ -129,20 +129,20 @@ void menu() {
 
 void validarCarro(sfRenderWindow *main_window, sfSprite *sprite, sfVector2f pos, struct Player *player, int carro) {
 
-//    player->carro = carro;
-//    *player = Connect(player);
-//    printf("%s  \n", "rcvMSG");
-//    printf("%d \n", player->carro);
-//    printf("%d \n", carro);
-//    if (player->carro == carro){
-//        player->carSelect = true;
-//        while (!player->running){
-//            sfSleep(sfSeconds(1));
-//            *player = Connect(player);
-//        }
-//        game(main_window, sprite, pos, player);
-//    }
-    game(main_window, sprite, pos, player);
+    player->carro = carro;
+    *player = Connect(player);
+    printf("%s  \n", "rcvMSG");
+    printf("%d \n", player->carro);
+    printf("%d \n", carro);
+    if (player->carro == carro){
+        player->carSelect = true;
+        while (!player->running){
+            sfSleep(sfSeconds(1));
+            *player = Connect(player);
+        }
+        game(main_window, sprite, pos, player);
+    }
+//    game(main_window, sprite, pos, player);
 
 }
 /*

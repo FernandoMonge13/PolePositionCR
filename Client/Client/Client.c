@@ -173,30 +173,61 @@ void createJson(){
 
 }
 
-void readJson(char *info){
+void readJson(char* buffer){
 
-    printf("%s", info);
+    printf("%s", *buffer);
 
-    cJSON* allInfo;
-    cJSON* players;
-    cJSON* data;
+//    char* aux="";
+
+//    printf("Recibio: %s", buffer);
+    //printf("%c", info);
 
 
-    cJSON* taste;
-    char name;
+    cJSON* taste = NULL;
+    cJSON* players = NULL;
+    cJSON* player1 = NULL;
+    cJSON* id = NULL;
+    cJSON* puntos = NULL;
+    cJSON* vidas = NULL;
+    cJSON* posX = NULL;
+    cJSON* posY = NULL;
+    cJSON* posBalaX = NULL;
+    cJSON* posBalaY = NULL;
+    cJSON* startGame = NULL;
+    cJSON* carro = NULL;
+
+    char* name;
+
 
 //    Todo_lo que tenga info adentro
-    taste = cJSON_Parse(info);
+    taste = cJSON_Parse(buffer);
 
 
 //    Jala un unico elemento del json y en este caso
 //    se lo mete a un string pero puede se a uno tipo cJSON
 
-    players = cJSON_GetObjectItem(taste, "players");
-    data = cJSON_GetObjectItem(players, "id");
+//    players = cJSON_GetObjectItem(taste, "players");
+//    player1 = cJSON_GetArraySize(players);
+//    id = cJSON_GetObjectItem(player1, "id");
+//    puntos = cJSON_GetObjectItem(player1, "puntos");
+//    vidas = cJSON_GetObjectItem(player1, "vidas");
+//    posX = cJSON_GetObjectItem(player1, "posX");
+//    posY = cJSON_GetObjectItem(player1, "posY");
+//    posBalaX = cJSON_GetObjectItem(player1, "posBalaX");
+//    posBalaY = cJSON_GetObjectItem(player1, "posBalaY");
+//    startGame = cJSON_GetObjectItem(player1, "startGame");
+//    carro = cJSON_GetObjectItem(player1, "carro");
+//
 
-    name = cJSON_Print(data);
-    printf("%s", name);
+
+//    printf("ID:%d", id->valueint);
+
+
+//    name = cJSON_Print(player1);
+//    printf("\n%s", name);
+
+//    printf("\n%s", players->valuestring);
+
 
 }
 

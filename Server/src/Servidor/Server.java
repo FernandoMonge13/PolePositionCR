@@ -107,8 +107,11 @@ public class Server {
                     System.out.println(playerReceived.getId());
                     data.updatePlayers(playerReceived);
 
-                    outputStream.println(getParsedJsonToSend(json.JsonWritting(data)));
-                    System.out.println(getParsedJsonToSend(json.JsonWritting(data)));
+//                    outputStream.println(getParsedJsonToSend(json.JsonWritting(data)));
+//                    System.out.println(getParsedJsonToSend(json.JsonWritting(data)));
+
+                    outputStream.println(json.JsonWritting(data));
+                    System.out.println(json.JsonWritting(data));
                 }
 
 

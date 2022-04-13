@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include "game.h"
 #include "malloc.h"
+#include "../Client/Client.h"
 //#include "../Client/Client.c"
 
 struct sms{
@@ -128,6 +129,9 @@ void game(sfRenderWindow* main_window, sfSprite* sprite, sfVector2f pos, struct 
     sfEvent event;
 //    sfFloatRect_intersects()
 //    float total_time = 0.0f;
+
+//    Connect(player); ////////////////////////////////////
+
     float delta_time;
     sfClock* clock = sfClock_create();
     while (sfRenderWindow_isOpen(main_window))
@@ -221,6 +225,9 @@ void game(sfRenderWindow* main_window, sfSprite* sprite, sfVector2f pos, struct 
         else if (player1->bulletCooldown <= 0){
             playerBulletPos.x = -500.0f;
         }
+
+        Connect(player);
+
         sfRenderWindow_clear(main_window, sfBlack);
         sfSprite_setPosition(road, roadPos);
         sfSprite_setPosition(road2, road2Pos);
@@ -230,7 +237,7 @@ void game(sfRenderWindow* main_window, sfSprite* sprite, sfVector2f pos, struct 
         sfRenderWindow_drawSprite(main_window, road2, NULL);
         sfRenderWindow_drawSprite(main_window, playerBullet_Sprite, NULL);
         sfRenderWindow_drawSprite(main_window, sprite, NULL);
-        sfRenderWindow_drawSprite(main_window, turboSprite, NULL);
+//        sfRenderWindow_drawSprite(main_window, turboSprite, NULL);
 
 
         sfRenderWindow_drawText(main_window, lifes_txt, NULL);
