@@ -7,12 +7,19 @@ public class LinkedList<T> {
     private Node<T> tail;
     private int size;
 
+    /**
+     * Constructo para inicializar la lista enlazada
+     */
     public LinkedList() {
         this.head = null;
         this.tail = null;
         this.size = 0;
     }
 
+    /**
+     * Constructor para agregar a la lista enlazada un elemento
+     * @param value
+     */
     public void add(T value) {
         Node<T> newNode = new Node<T>(value);
         if (this.head == null) {
@@ -25,6 +32,10 @@ public class LinkedList<T> {
         this.size++;
     }
 
+    /**
+     * Metodo para obtener el elemento en la posicion index
+     * @return current.data
+     */
     public T get(int index) {
         if (index < 0 || index >= this.size) {
             throw new IndexOutOfBoundsException();
@@ -36,6 +47,10 @@ public class LinkedList<T> {
         return current.data;
     }
 
+    /**
+     * Metodo para eliminar el elemento correspondiente
+     * @param value
+     */
     public void remove(Objects value){
         Node<T> current = this.head;
         Node<T> previous = null;
@@ -53,16 +68,27 @@ public class LinkedList<T> {
         }
     }
 
+    /**
+     * Metodo para obtener el tamaño de la lista
+     * @return size
+     */
     public int size() {
         return this.size;
     }
 
+    /**
+     * Metodo para limpiar la lista
+     */
     public void clear() {
         this.head = null;
         this.tail = null;
         this.size = 0;
     }
 
+    /**
+     * Metodo para verificar si la lista contiene un elemento
+     * @return boolean
+     */
     public boolean contains(T value) {
         Node<T> current = this.head;
         while (current != null) {
@@ -74,6 +100,10 @@ public class LinkedList<T> {
         return false;
     }
 
+    /**
+     * Metodo para obtener el indice de un elemento
+     * @return index
+     */
     public T indexOf(T value) {
         Node<T> current = this.head;
         for (int i = 0; i < this.size; i++) {
@@ -84,37 +114,11 @@ public class LinkedList<T> {
         return null;
     }
 
-    public void add(int index, T value) {
-        if (index < 0 || index > this.size) {
-            throw new IndexOutOfBoundsException();
-        }
-        Node<T> newNode = new Node<T>(value);
-        if (index == 0) {
-            newNode.next = this.head;
-            this.head = newNode;
-        } else {
-            Node<T> current = this.head;
-            for (int i = 0; i < index - 1; i++) {
-                current = current.next;
-            }
-            newNode.next = current.next;
-            current.next = newNode;
-        }
-        this.size++;
-    }
-
-    public void set(int index, T value) {
-        if (index < 0 || index >= this.size) {
-            throw new IndexOutOfBoundsException();
-        }
-        Node<T> current = this.head;
-        for (int i = 0; i < index; i++) {
-            current = current.next;
-        }
-
-        current.data = value;
-    }
-
+    /**
+     * Metodo para remover un elemento de la lista
+     * @param value
+     * @return
+     */
     public T remove(T value) {
         Node<T> current = this.head;
         Node<T> previous = null;
@@ -134,6 +138,9 @@ public class LinkedList<T> {
         return null;
     }
 
+    /**
+     * Metodo para remover el primer elemento de la lista
+     */
     public T removeFirst() {
         if (this.head == null) {
             return null;
@@ -144,6 +151,9 @@ public class LinkedList<T> {
         return current.data;
     }
 
+    /**
+     * Metodo para remover el ultimo elemento de la lista
+     */
     public void removeLast() {
         if (this.head == null) {
             return;
@@ -158,6 +168,10 @@ public class LinkedList<T> {
         this.size--;
     }
 
+    /**
+     * Metodo para obtener el ultimo elemento de la lista
+     * @return
+     */
     public T getLast() {
         if (this.head == null) {
             return null;
@@ -169,30 +183,14 @@ public class LinkedList<T> {
         return current.data;
     }
 
+    /**
+     * Metodo para obtener el primer elemento de la lista
+     * @return
+     */
     public T getFirst() {
         if (this.head == null) {
             return null;
         }
         return this.head.data;
-    }
-
-    public void reverse() {
-        Node<T> current = this.head;
-        Node<T> previous = null;
-        while (current != null) {
-            Node<T> next = current.next;
-            current.next = previous;
-            previous = current;
-            current = next;
-        }
-        this.head = previous;
-    }
-
-    public void print() {
-        Node<T> current = this.head;
-        while (current != null) {
-            System.out.println(current.data);
-            current = current.next;
-        }
     }
 }
