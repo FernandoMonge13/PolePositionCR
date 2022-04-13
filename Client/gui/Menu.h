@@ -26,3 +26,4 @@ void menu();
  * @param carro numero identificador del carro elegido por el jugador
  */
 void validarCarro(sfRenderWindow* main_window, sfSprite* sprite, sfVector2f pos, struct Player* player, int carro);
+

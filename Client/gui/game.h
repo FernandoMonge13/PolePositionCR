@@ -17,3 +17,4 @@
  * @param player structura con la información recibida del servidor
  */
 void game (sfRenderWindow* main_window, sfSprite* sprite, sfVector2f pos, struct Player *player);
+
