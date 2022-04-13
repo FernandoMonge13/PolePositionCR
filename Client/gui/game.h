@@ -9,8 +9,11 @@
 
 #include <SFML/Graphics.h>
 
+/***
+ * Controla la interfaz de juego
+ * @param main_window ventana del programa
+ * @param sprite sprite del carro del jugador
+ * @param pos posición del carro del jugador
+ * @param player structura con la información recibida del servidor
+ */
 void game (sfRenderWindow* main_window, sfSprite* sprite, sfVector2f pos, struct Player *player);
-
-
-// Rehaciendo game
-void game3 (sfRenderWindow* main_window, sfSprite* playerCar, sfVector2f* playerPos, struct Player *player);

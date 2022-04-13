@@ -11,10 +11,18 @@
 #include <SFML/Graphics.h>
 
 
-// Controla el menu del juego donde se selecciona el carro deseado
+/***
+ * Controla la interfaz del menu principal
+ */
 void menu();
 
-// parece que funciona si creo la ventana y demás en la misma funcion
-void game2();
-
+/***
+ * Valida que el carro elegido por el usuario no haya sido seleccionado por otro jugador. Si el carro está disponible y
+ * los demás jugadores están listos, empieza el juego
+ * @param main_window ventana de la aplicación
+ * @param sprite sprite del el carro elegido por el jugador
+ * @param pos posición del carro elegido por el jugador
+ * @param player estuctura con lo datos recibidos del servidor
+ * @param carro numero identificador del carro elegido por el jugador
+ */
 void validarCarro(sfRenderWindow* main_window, sfSprite* sprite, sfVector2f pos, struct Player* player, int carro);
